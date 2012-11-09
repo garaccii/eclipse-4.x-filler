@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.startup">
+      <startup
+            class="jp.sourceforge.pdt_tools.hidequickaccess.Startup"></startup>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="jp.sourceforge.pdt_tools.hidequickaccess.handlers.HideQuickAccessHandler"
+            commandId="jp.sourceforge.pdt_tools.HideQuickAccess.command">
+      </handler>
+      <handler
+            class="jp.sourceforge.pdt_tools.hidequickaccess.handlers.QuickAccessHandler"
+            commandId="jp.sourceforge.pdt_tools.HideQuickAccess.quickaccess">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            categoryId="org.eclipse.ui.category.window"
+            id="jp.sourceforge.pdt_tools.HideQuickAccess.command"
+            name="Hide QuickAccess">
+         <state
+               id="org.eclipse.ui.commands.toggleState">
+            <class
+                  class="org.eclipse.ui.handlers.RegistryToggleState">
+               <parameter
+                     name="default"
+                     value="true">
+               </parameter>
+               <parameter
+                     name="persisted"
+                     value="true">
+               </parameter>
+            </class>
+         </state>
+      </command>
+      <command
+            categoryId="org.eclipse.ui.category.window"
+            description="Quickly access UI elements (show Quick Access)"
+            id="jp.sourceforge.pdt_tools.HideQuickAccess.quickaccess"
+            name="Quick Access">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:window?after=additions">
+         <command
+               commandId="jp.sourceforge.pdt_tools.HideQuickAccess.command"
+               id="jp.sourceforge.pdt_tools.HideQuickAccess.menu"
+               style="toggle">
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="jp.sourceforge.pdt_tools.HideQuickAccess.quickaccess"
+            contextId="org.eclipse.ui.contexts.window"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+3">
+      </key>
+   </extension>
+
+</plugin>

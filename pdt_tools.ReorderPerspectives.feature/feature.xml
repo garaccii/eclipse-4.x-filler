@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="jp.sourceforge.pdt_tools.ReorderPerspectives.feature"
+      label="Reorder Perspectives"
+      version="1.1.0.v20121108"
+      provider-name="sourceforge.jp/users/atlanto">
+
+   <description>
+      Reorder Perspectives in the perspective switcher for eclipse 4.2.1
+   </description>
+
+   <plugin
+         id="jp.sourceforge.pdt_tools.ReorderPerspectives"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

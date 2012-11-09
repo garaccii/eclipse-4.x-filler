@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Reorder Perspectives
+Bundle-SymbolicName: jp.sourceforge.pdt_tools.ReorderPerspectives; singleton:=true
+Bundle-Version: 1.1.0.v20121108
+Bundle-Activator: jp.sourceforge.pdt_tools.reorderperspectives.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.e4.ui.workbench;bundle-version="0.10.3",
+ org.eclipse.e4.core.contexts;bundle-version="1.1.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Vendor: sourceforge.jp/users/atlanto

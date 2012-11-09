@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            name="Reorder Perspectives"
+            categoryId="org.eclipse.ui.category.window"
+            id="jp.sourceforge.pdt_tools.ReorderPerspectives.commands.reorderCommand">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            commandId="jp.sourceforge.pdt_tools.ReorderPerspectives.commands.reorderCommand"
+            class="jp.sourceforge.pdt_tools.reorderperspectives.handlers.ReorderHandler">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:window?after=additions">
+         <command
+               commandId="jp.sourceforge.pdt_tools.ReorderPerspectives.commands.reorderCommand"
+               id="jp.sourceforge.pdt_tools.ReorderPerspectives.menus.reorderCommand">
+         </command>
+      </menuContribution>
+   </extension>
+
+</plugin>
