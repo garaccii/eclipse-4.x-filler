@@ -2,7 +2,7 @@
 <feature
       id="jp.sourceforge.pdt_tools.HideQuickAccess.feature"
       label="Hide Quick Access"
-      version="1.3.0.v20121108"
+      version="1.3.1.v20121111"
       provider-name="sourceforge.jp/users/atlanto">
 
    <description>
