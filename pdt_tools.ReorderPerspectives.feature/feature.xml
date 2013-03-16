@@ -2,7 +2,7 @@
 <feature
       id="jp.sourceforge.pdt_tools.ReorderPerspectives.feature"
       label="Reorder Perspectives"
-      version="1.1.0.v20121108"
+      version="1.1.1.v20130316"
       provider-name="sourceforge.jp/users/atlanto">
 
    <description>
